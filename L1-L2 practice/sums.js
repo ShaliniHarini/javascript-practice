@@ -84,3 +84,15 @@ console.log(output);
 // Input: nums = [3, 2, 1, 5, 6, 4], k = 2
 // Output: 5
 
+
+function findOddNumbers(start, end) {
+    let result = [];
+    for (let i = start; i <= end; i++) {
+      if (i % 2 !== 0) {
+        result.push(i);
+      }
+    }
+    let output = result.join(", ");
+    console.log(output);
+  }
+  findOddNumbers(3,15)
